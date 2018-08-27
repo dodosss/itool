@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>调试助手</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    #parent {
+      padding: 5% 0;
+    }
+
+    #child {
+      padding: 10% 20%;
+    }
+
+    #child div {
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="parent">
+    <div id="child">
+      <div>version:
+        <b>v1.0.0</b>
+      </div>
+      <div>e-mail:
+        <b>
+          <a href="#">https://github.com/dodosss/device-dev-helper</a>
+        </b>
+      </div>
+    </div>
+  </div>
+  <script>
+    require('./../renderer.js')
+  </script>
+</body>
+
+</html>

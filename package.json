@@ -1,0 +1,48 @@
+{
+  "name": "itool",
+  "version": "1.0.0",
+  "description": "packet tool",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "win": "electron-packager . electron-quick-start *--icon=static/img/icon* --overwrite --win --out ./out --arch=x64 --version=0.0.1 --electron-version=1.8.4",
+    "mac": "electron-packager . electron-quick-start *--icon=static/img/icon* --overwrite --darwin --out ./out --arch=x64 --version=0.0.1 --electron-version=1.8.4",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "lianghuibo",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.8.4",
+    "electron-packager": "^12.0.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.7.4",
+    "mysql": "^2.15.0"
+  },
+  "build": {
+    "appId": "com.uedao.itool",
+    "copyright": "dodo",
+    "productName": "调试助手",
+    "dmg": {
+      "background": "static/img/dmg.png",
+      "window": {
+        "x": 100,
+        "y": 100,
+        "width": 500,
+        "height": 300
+      }
+    },
+    "win": {
+      "icon": "static/img/icon.ico"
+    }
+  }
+}
